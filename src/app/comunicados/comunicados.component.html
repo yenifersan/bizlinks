@@ -1,0 +1,58 @@
+<!--date-->
+<div class="container">
+    <h1 class="title" style="text-align: center;">COMUNICADO</h1>
+    <hr>
+    <div style="text-align: center;">
+        <ul class="list-group list-group-horizontal-lg">
+            <li class="list-group-item">2019</li>
+            <li class="list-group-item">2018</li>
+            <li class="list-group-item">2017</li>
+            <li class="list-group-item">2016</li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- <ul class="list-group list-group-flush" *ngFor="let getcom of this.getcomu">                                    
+        <li class="list-group-item">
+            <p class="meses">{{getcom.date | comun:'date'}}</p>
+            <p class="meses">{{getcom.date | date:"LLLL"}}</p>
+            <div class="col-md-4" style="margin-top: 20px;">
+                <div class="d-flex w-100 justify-content-between">
+                    <small class="text-muted">{{getcom.date | date:"shortDate"}}</small>
+                </div>
+            </div>
+            <li ng-repeat="getcomu in value">
+                <div class="col-md-12">
+                    <h6 class="texto">{{getcom.communicated}}</h6>
+                </div>
+            </li>
+    </ul> -->
+
+    <!-- <ul class="list-group list-group-flush" *ngFor="let getcom of this.getcomu">
+        <li class="list-group-item">
+            <p class="meses">{{getcom.mes}}</p>
+            <p class="meses">{{getcom.mes | date:"LLLL"}}</p>
+            <div class="col-md-4" style="margin-top: 20px;">
+                <div class="d-flex w-100 justify-content-between">
+                    <small class="text-muted">{{getcom.mes | mes:"shortDate"}}</small>
+                </div>
+            </div>
+
+            <ul>
+                <li *ngFor="let event of getcom.events">{{event.id}} {{event.title}}</li>
+            </ul>
+
+        </li>
+    </ul> -->
+
+    <ul>
+        <li *ngFor="let group of events | comun">{{group.mes}}
+            <p>{{group.date}}</p>
+            <ul>
+                <li *ngFor="let event of group.events">{{event.id}} {{event.title}}</li>
+            </ul>
+        </li>
+    </ul>
+
+
+</div>

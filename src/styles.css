@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+  /* You can add global styles to this file, and also import other style files */
+  
+  .title {
+      margin-top: 20px;
+      color: blue;
+  }
+  
+  .date {
+      color: blue;
+      margin-left: 40px;
+  }
+  
+  .meses {
+      margin-left: 55px;
+      color: red;
+  }
+  
+  .text-muted {
+      color: blue;
+  }
+  /*
+  .texto {
+
+  } */
